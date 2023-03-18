@@ -1,11 +1,17 @@
 # Using libfuzzer and libprotobuf-mutator with CMake
 
-Extremely simple setups for using libfuzzer and libprotobuf-mutator with CMake. 
+Here are some extremely simple setups for using libfuzzer and libprotobuf-mutator with CMake. 
+Created because all the examples I could find were too darn complicated for my limited CMake experience...
 
-These generally require the *latest* version of LLVM (clang, lld, etc.) to build. I recommend building it from source.
+## Requirements
 
-Maybe I'm just dumb and don't know CMake... but the examples I found elsewhere were too complicated. I decided to
-build up from the basics:
+These generally require the *latest* version of [LLVM](https://github.com/llvm/llvm-project) 
+(clang, lld, etc.) to build. I recommend building it from source. You'll also want to install 
+[libprotobuf-mutator](https://github.com/google/libprotobuf-mutator).
+
+## Contents
+
+I build up from the basics:
 
  - `fuzz`: basic example from libfuzzer's documentation
  - `fuzz-library`: connecting to a C library
